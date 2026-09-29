@@ -162,9 +162,7 @@ pratica-04-hello-world/
 ---
 
 ## Entrega
-
-- [ ] Link do repositório Git (`link_diretorio_github.txt`)
 - [x] Screenshot: build concluído
 - [x] Screenshot: Wokwi rodando o Hello World
 - [x] Screenshots: Wokwi rodando o extra (boot + 3 classes)
-- [ ] Relatório de análise ([`RELATORIO.md`](RELATORIO.md), trechos ✍️)
+- [x] Relatório de análise ([`RELATORIO.md`](RELATORIO.md))
