@@ -27,7 +27,7 @@
 |---|---|---|---|
 | 1 | Reproduzir os passos do Hello World | Projeto ESP-IDF criado do zero; `espressif/esp-tflite-micro` do Registry; exemplo `hello_world` em `main/`; ESP-NN desligado para o Wokwi | ✅ build + simulação |
 | 2 | Print do Wokwi rodando o Hello World | Senoide no monitor serial ([Evidências da Parte A](#evidências-da-parte-a)) | ✅ screenshot |
-| 3 | Relatório de análise | [`RELATORIO.md`](RELATORIO.md) | ✍️ em redação |
+| 3 | Relatório de análise | [`RELATORIO.md`](RELATORIO.md) |✅ entregue |
 | Extra | Nova aplicação, novo sensor, novo dataset | Classificador de orientação com **MPU6050**, dataset sintético e treino próprio ([Parte B](#parte-b-extra-classificador-de-orientação-com-mpu6050)) | ✅ build, simulação e evidências |
 
 ### Stack
