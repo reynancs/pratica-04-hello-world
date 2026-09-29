@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "Renan Cardoso - Pratica 04 (extra): classificador de orientacao com MPU6050 + TFLite Micro",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": { "builder": "esp-idf" }
+    },
+    {
+      "type": "wokwi-mpu6050",
+      "id": "mpu",
+      "top": 80,
+      "left": -220,
+      "attrs": { "accelX": "0", "accelY": "0", "accelZ": "1" }
+    }
+  ],
+  "connections": [
+    ["esp:3V3.1", "mpu:VCC", "red", ["h0"]],
+    ["esp:GND.1", "mpu:GND", "black", ["h0"]],
+    ["esp:8", "mpu:SDA", "green", ["h0"]],
+    ["esp:9", "mpu:SCL", "blue", ["h0"]],
+    ["esp:TX", "$serialMonitor:RX", "", []],
+    ["esp:RX", "$serialMonitor:TX", "", []]
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+# Configuração versionada do projeto (o sdkconfig gerado não vai para o git).
+CONFIG_IDF_TARGET="esp32s3"
+
+# Folga para a pilha da task principal: o Invoke() do TFLM empilha chamadas
+# de kernel. O padrão (3584 bytes) basta para o hello_world; 8 KB dá margem.
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192

@@ -1,0 +1,8 @@
+# Versões validadas em 29/09/2026 (Windows 11, Python 3.12, CPU).
+# No Colab, o TensorFlow já vem instalado: basta `pip install matplotlib` se faltar.
+tensorflow==2.21.0
+matplotlib>=3.8
+
+# Opcionais (só Linux/Colab):
+#   ai-edge-litert  -> interpretador LiteRT usado pelo evaluate.py do upstream
+#   tflite-micro    -> runtime Python do TFLM (o mesmo interpretador do firmware)

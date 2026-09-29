@@ -1,0 +1,164 @@
+{
+  "interpretador": "tflite",
+  "amostras_teste": 270,
+  "modelos": {
+    "float32": {
+      "accuracy": 0.9926,
+      "confusion_matrix": [
+        [
+          90,
+          0,
+          0
+        ],
+        [
+          1,
+          89,
+          0
+        ],
+        [
+          0,
+          1,
+          89
+        ]
+      ],
+      "per_class": {
+        "REPOUSO": {
+          "precision": 0.989,
+          "recall": 1.0,
+          "f1": 0.9945
+        },
+        "INCLINADO": {
+          "precision": 0.9889,
+          "recall": 0.9889,
+          "f1": 0.9889
+        },
+        "INVERTIDO": {
+          "precision": 1.0,
+          "recall": 0.9889,
+          "f1": 0.9944
+        }
+      },
+      "tamanho_bytes": 2716,
+      "confianca_media": 0.9827
+    },
+    "int8": {
+      "accuracy": 0.9926,
+      "confusion_matrix": [
+        [
+          90,
+          0,
+          0
+        ],
+        [
+          1,
+          89,
+          0
+        ],
+        [
+          0,
+          1,
+          89
+        ]
+      ],
+      "per_class": {
+        "REPOUSO": {
+          "precision": 0.989,
+          "recall": 1.0,
+          "f1": 0.9945
+        },
+        "INCLINADO": {
+          "precision": 0.9889,
+          "recall": 0.9889,
+          "f1": 0.9889
+        },
+        "INVERTIDO": {
+          "precision": 1.0,
+          "recall": 0.9889,
+          "f1": 0.9944
+        }
+      },
+      "tamanho_bytes": 3160,
+      "confianca_media": 0.979
+    }
+  },
+  "concordancia_float_int8": 1.0,
+  "delta_acuracia_int8_menos_float": 0.0,
+  "vetores_referencia": [
+    {
+      "descricao": "plana, face p/ cima (0 graus)",
+      "entrada_g": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "entrada_int8": [
+        -1,
+        -1,
+        116
+      ],
+      "saida_int8": [
+        127,
+        -128,
+        -128
+      ],
+      "classe": "REPOUSO"
+    },
+    {
+      "descricao": "inclinada 45 graus",
+      "entrada_g": [
+        0.707,
+        0.0,
+        0.707
+      ],
+      "entrada_int8": [
+        82,
+        -1,
+        82
+      ],
+      "saida_int8": [
+        -128,
+        127,
+        -128
+      ],
+      "classe": "INCLINADO"
+    },
+    {
+      "descricao": "de lado (90 graus)",
+      "entrada_g": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "entrada_int8": [
+        116,
+        -1,
+        -1
+      ],
+      "saida_int8": [
+        -128,
+        127,
+        -128
+      ],
+      "classe": "INCLINADO"
+    },
+    {
+      "descricao": "de cabeca p/ baixo (180 graus)",
+      "entrada_g": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "entrada_int8": [
+        -1,
+        -1,
+        -118
+      ],
+      "saida_int8": [
+        -128,
+        -128,
+        127
+      ],
+      "classe": "INVERTIDO"
+    }
+  ]
+}

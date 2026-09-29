@@ -1,0 +1,3 @@
+# Configuração versionada do projeto (o sdkconfig gerado não vai para o git).
+# Num clone limpo, o idf.py lê este arquivo e já configura o target correto.
+CONFIG_IDF_TARGET="esp32s3"

@@ -1,0 +1,38 @@
+{
+  "classes": [
+    "REPOUSO",
+    "INCLINADO",
+    "INVERTIDO"
+  ],
+  "tilt_bands_deg": {
+    "REPOUSO": [
+      0.0,
+      30.0
+    ],
+    "INCLINADO": [
+      30.0,
+      120.0
+    ],
+    "INVERTIDO": [
+      120.0,
+      180.0
+    ]
+  },
+  "seed": 42,
+  "epochs": 200,
+  "samples_total": 1800,
+  "samples_per_split": {
+    "train": 1260,
+    "val": 270,
+    "test": 270
+  },
+  "params": 131,
+  "float_tflite_bytes": 2716,
+  "int8_tflite_bytes": 3160,
+  "keras_test_accuracy": 0.9926,
+  "int8_ops": [
+    "FULLY_CONNECTED",
+    "SOFTMAX"
+  ],
+  "tensorflow": "2.21.0"
+}

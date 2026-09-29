@@ -1,0 +1,8 @@
+## Equivalente ao requirements.txt: baixados do ESP Component Registry para
+## managed_components/ (o site-packages do projeto).
+dependencies:
+  espressif/esp-tflite-micro:
+    version: "1.4.1"
+  espressif/mpu6050: "^1.2.1"
+  idf:
+    version: ">=5.0"
